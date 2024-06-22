@@ -35,11 +35,7 @@ const Form = () => {
         if(!formData.email) errors.email = 'Email is required'
         if (!/\S+@\S+\.\S+/.test(formData.email)) errors.email = 'Email is invalid';
         if (!formData.age) errors.age = 'Age is required';
-<<<<<<< HEAD
-        if (formData.age <= 15) errors.age = 'Age must be greater than 15';
-=======
         if (formData.age <= 0) errors.age = 'Age must be greater than 0';
->>>>>>> cfe657c6289ba1c5e09ee4d86c8664d8b088edc3
         if (formData.attendingWithGuest === 'Yes' && !formData.guestName) {
             errors.guestName = 'Guest name is required if attending with a guest';
         }
